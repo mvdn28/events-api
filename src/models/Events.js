@@ -10,6 +10,9 @@ const Events = db.define("events", {
     name: {
         type: DataTypes.STRING
     },
+    poster: {
+        type: DataTypes.STRING
+    },
     attractions:{
         type: DataTypes.JSON
     },

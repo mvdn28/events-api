@@ -4,8 +4,6 @@ const eventController = {
     async listarEventos(req, res){
         try {
             const events = await Events.findAll();
-            events[0].dataValues.teste='teste'
-            console.log(events[0].dataValues)
             return res.status(200).json(events);
         } catch (error) {
             return res.status(500).json("Erro ao processar...");
